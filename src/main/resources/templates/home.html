@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head><title>home</title></head>
+
+<body>
+	<h2>home consume ws rest</h2>
+	<form th:action="@{/autenticar}" method="post">
+		<table>
+			<tr>
+				<td>Email :</td>
+				<td><input type="email" name="email" required="required"/></td>
+			</tr>
+			<tr>
+				<td>Password :</td>
+				<td><input type="password" name="pass" required="required"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Login Rest"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
